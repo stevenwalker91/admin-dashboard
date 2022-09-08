@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    color: #373D3F;
+}
+
+#app-container,
+#sidebar,
+#main,
+#header,
+#logo,
+#nav,
+#support-panel,
+.icons,
+.nav-options
+{
+    display: grid;
+}
+
+#logo,
+#nav,
+#support-panel,
+#welcome-container,
+#form-container,
+form,
+#user-container, 
+#btns-container
+{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+#logo {
+    padding: 15px;
+}
+
+
+#app-container {
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 130px 1fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#sidebar {
+
+    background-color:#5a6881;
+    grid-column: 1/2;
+    grid-row: 1 / 3;
+    color: white;
+    grid-template-rows: 1fr 2fr 2fr;
+    box-shadow:  2px 1px 0px rgb(0 0 0 / 19%);
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    height:100vh;
+    overflow: auto;
+
+}
+
+#header {
+    box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 25%);
+    grid-template-columns: 7fr 5fr;
+    grid-template-rows: 1fr 2fr;
+    z-index: 1;
+    background-color: white;
+    position: sticky;
+    top: 0;
+
+}
+
+#main {
+    grid-column: 2 / 3;
+    background-color: lightgrey;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    gap: 20px;
+
+
+}
+ul {
+    padding-left: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-weight: bold;
+    align-items: center;    
+}
+.active {
+    background-color:#3f495c;
+    border-left: 4px solid white;
+}
+li:hover {
+    border-left: 4px solid white;
+    cursor: pointer;
+}
+
+
+.search-input {
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #bcb9b9;
+}
+
+.search-input:focus {
+  border-color: rgb(38, 131, 198);
+  outline: 0;
+}
+
+.profile-pic {
+  border-radius: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+#welcome-profile-image > .profile-pic {
+  width: 60px;
+}
+
+#user-container > .profile-pic {
+  width: 40px;
+}
+
+.user-post > .profile-pic {
+  width: 30px;
+}
+
+.pull-right {
+  padding-right:20px;
+  justify-content: end;
+}
+
+#form-container,
+#welcome-container,
+#user-container,
+#btns-container {
+  padding-left: 15px;
+
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+div {
+  border: 0px solid red;
+}
+
+
+button {
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border: 1px solid #5a6881;
+  background-color: #5a6881;
+  color: white;
+}
+
+button:hover {
+  border-color: white;
+}
+
+#btns-container {
+  gap: 10px;
+}
+
+#user-container > .fa-magnifying-glass {
+  display: none;
+}
+
+
+#projects {
+  display: flex;
+  gap:15px;
+  flex-wrap: wrap;
+  margin-top: 10px; 
+}
+
+.card {
+  background-color: white;
+  height: 125px;
+  width: 275px;
+  border-radius: 5px;
+  border-left: 6px solid lightseagreen;
+  box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 25%);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.icons-container {
+  align-self: flex-end;
+  margin-top: auto;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  font-size: 17px;
+
+}
+
+.panel {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 25%);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  flex-grow: 1;
+  gap: 5px;
+}
+
+#main, h5 {
+  font-size: 12px;
+}
+
+.pull-down-header {
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 11px;
+}
+.panel > p {
+  font-size: 11px;
+}
+
+.fa-solid:hover, 
+.fa-regular:hover {
+  cursor: pointer;
+  color: rgb(38, 131, 198);
+}
+
+p {
+  overflow: hidden;
+  word-break: break-word;
+  text-overflow: ellipsis;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:lightgray;
+  height: 0.5px;
+}
+
+#trending {
+  gap: 15px;
+}
+
+.user-post{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.post-details {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .side-bar-copy {
+    display: none;
+  }
+  #app-container {
+      grid-template-columns: 62px 1fr;
+  }
+
+  li {
+      padding-left: 0px;
+      justify-content: center;
+  } 
+  #form-container, #welcome-container {
+    display: none;
+  }
+  #header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .pull-right {
+    justify-content: center;
+  }
+  #user-container > .fa-magnifying-glass {
+    display: block;
+  }
+  #main {
+    grid-template-columns: 1fr;
+
+  }
+}
+
