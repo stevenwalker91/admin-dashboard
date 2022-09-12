@@ -184,23 +184,24 @@ button:hover {
 
 
 #projects {
-  display: flex;
+  display: grid;
   gap:15px;
   flex-wrap: wrap;
   margin-top: 10px; 
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
 }
 
 .card {
   background-color: white;
   height: 125px;
-  width: 350px;
   border-radius: 5px;
   border-left: 6px solid lightseagreen;
   box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 25%);
   padding: 10px;
   display: flex;
   flex-direction: column;
-  flex-shrink: 1;
+
 }
 
 .icons-container {
@@ -307,9 +308,6 @@ hr {
   #main {
     grid-template-columns: 1fr;
 
-  }
-  .card {
-    flex-grow: 1;
   }
 }
 
